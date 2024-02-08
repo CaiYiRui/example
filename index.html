@@ -4,7 +4,32 @@
 	<meta charset="UTF-8">
 	<title>静夜思</title>
 	<link rel="shortcut icon" href="favicon.ico">
-	<style type="text/css"></style>
+	<style type="text/css">
+		h1,p{
+			text-align: center;
+			animation:ani 5s;
+		}
+		@keyframes ani{
+			0%{
+				color: #f00;
+			}
+			25%{
+				color: orange;
+			}
+			50%{
+				color:green;
+			}
+			75%{
+				color:blue;
+			}
+			100%{
+				color:pink;
+			}			
+		}
+		p:first-of-type{
+			margin-left: 140px;
+		}
+	</style>
 	<script type="text/javascript" src=""></script>
 </head>
 <body>
@@ -13,5 +38,6 @@
 	<p>白日依山尽，黄河入海流。</p>
 	<p>欲穷千里目，更上一层楼。</p>
 	<script type="text/javascript"></script>
+	<script src="http://127.0.0.1:35729/livereload.js?ext=Chrome&amp;extver=2.1.0"></script>
 </body>
 </html>
