@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		page{
+			font-size: 60px;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			text-align: center;
+		}
+		span{
+			position: relative;
+			top: 50%;
+			margin-top: -30px;
+			display: block;
+		}
+		@keyframes season1{
+			0%{
+				opacity: 0;
+			}
+			25%{
+				opacity: 1;
+			}
+			50%{
+				opacity: 1;
+			}
+			75%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@keyframes season2{
+			0%{
+				opacity: 0;
+			}
+			25%{
+				opacity: 0;
+			}
+			50%{
+				opacity: 1;
+			}
+			75%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@keyframes season3{
+			0%{
+				opacity: 0;
+			}
+			25%{
+				opacity: 0;
+			}
+			50%{
+				opacity: 0;
+			}
+			75%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		@keyframes season4{
+			0%{
+				opacity: 0;
+			}
+			25%{
+				opacity: 0;
+			}
+			50%{
+				opacity: 0;
+			}
+			75%{
+				opacity: 0;
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+		#spring{
+			background-color: lightgreen;
+			animation:season1 4s infinite;
+
+		}
+		#summer{
+			background-color: #f00;
+			animation:season2 4s infinite;
+		}
+		#automn{
+			background-color: #000f;
+			color: #fff;
+			animation:season3 4s infinite;
+		}
+		#winter{
+			background-color: #fff;
+			animation:season4 4s infinite;
+		}
+	</style>
+	<script type="text/javascript" src="http://127.0.0.1:35729/livereload.js?ext=Chrome&amp;extver=2.1.0"></script>
+</head>
+<body>
+	<page id='spring'><span>春</span></page>
+	<page id='summer'><span>夏</span></page>
+	<page id='automn'><span>秋</span></page>
+	<page id='winter'><span>冬</span></page>
+	<script type="text/javascript"></script>
+	<script type="text/javascript" src=""></script>
+</body>
+</html>
+	
