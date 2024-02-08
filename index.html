@@ -5,9 +5,18 @@
 	<title>静夜思</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<style type="text/css">
+		html{
+			height: 100%;
+		}
+		body{
+			background: url(img/bg.png) no-repeat center center;
+			-webkit-background-size: 100% 100%;
+			background-size: 100% 100%;
+			height: 100%;
+		}
 		h1,p{
 			text-align: center;
-			animation:ani 5s;
+			animation:ani 5s infinite;
 		}
 		@keyframes ani{
 			0%{
@@ -27,7 +36,58 @@
 			}			
 		}
 		p:first-of-type{
-			margin-left: 140px;
+			margin-left: 130px;
+		}
+		p{
+			font-size: 24px;
+		}
+		#p1,#p2{
+			font-size: 80px;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			color: #fff;
+			opacity: 0;
+		}
+		#p1{
+			animation:ani2 10s 12s infinite;
+		}
+		#p2{
+			animation:ani3 6s 16s infinite;
+		}
+		@keyframes ani2{
+			0%{
+				opacity:0;
+			}
+			25%{
+				opacity:1;				
+			}
+			50%{
+				opacity:0;				
+			}
+			75%{
+				opacity:0;				
+			}
+			100%{
+				opacity:0;				
+			}
+		}
+		@keyframes ani3{
+			0%{
+				opacity:0;
+			}
+			25%{
+				opacity:0;				
+			}
+			50%{
+				opacity:0;				
+			}
+			75%{
+				opacity:1;				
+			}
+			100%{
+				opacity:0;				
+			}
 		}
 	</style>
 	<script type="text/javascript" src=""></script>
@@ -38,6 +98,8 @@
 		<p>李白</p>
 	<p>白日依山尽，黄河入海流。</p>
 	<p>欲穷千里目，更上一层楼。</p>
+	<p id='p1'>沧海一声笑</p>
+	<p id='p2'>滔滔两岸潮</p>
 	<script type="text/javascript"></script>
 	<script src="http://127.0.0.1:35729/livereload.js?ext=Chrome&amp;extver=2.1.0"></script>
 </body>
