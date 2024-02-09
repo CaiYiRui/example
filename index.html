@@ -93,21 +93,8 @@
 		}
 
 	</style>
-	<script type="text/javascript" src=""></script>
-	<script type="text/javascript">
-		function audioAutoPLay(id){
-			var audio = document.getElementById(id);
-			audio.play();
-			document.addEventListener("WeixinJSBridgeReady",function (){
-			audio.play();
-			},false);
-			document.addEventListener('VixinJsBridgeReady',function(){
-			audio.play();
-			},false);
-		}		
-	</script>
 </head>
-<body onload="audioAutoPLay(au)">
+<body>
 	<h1>静夜思</h1>
 		<p>李白</p>
 	<p>白日依山尽，黄河入海流。</p>
@@ -116,5 +103,9 @@
 	<p id='p2'>滔滔两岸潮</p>
 	<script src="http://127.0.0.1:35729/livereload.js?ext=Chrome&amp;extver=2.1.0"></script>
 	<audio src="mid/music.mp3" controls autoplay loop id="au"></audio>
+	<script type="text/javascript">
+		var audio=document.getElementById('au');
+		audio.play()
+	</script>
 </body>
 </html>
