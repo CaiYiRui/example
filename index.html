@@ -13,7 +13,7 @@
 			-webkit-background-size: 100% 100%;
 			background-size: 100% 100%;
 			height: 100%;
-			text-align:center;
+			text-align: center;
 		}
 		h1,p{
 			text-align: center;
@@ -43,7 +43,7 @@
 			font-size: 24px;
 		}
 		#p1,#p2{
-			font-size: 80px;
+			font-size: 60px;
 			position: absolute;
 			text-align: center;
 			width: 100%;
@@ -90,18 +90,30 @@
 				opacity:0;				
 			}
 		}
+
 	</style>
 	<script type="text/javascript" src=""></script>
+	<script type="text/javascript">
+		function audioAutoPLay(id){
+			var audio = document.getElementById(id);
+			audio.play();
+			document.addEventListener("WeixinJSBridgeReady",function (){
+			audio.play();
+			},false);
+			document.addEventListener('VixinJsBridgeReady',function(){
+			audio.play();
+			},false);
+		}		
+	</script>
 </head>
-<body>
+<body onload="audioAutoPLay(au)">
 	<h1>静夜思</h1>
 		<p>李白</p>
 	<p>白日依山尽，黄河入海流。</p>
 	<p>欲穷千里目，更上一层楼。</p>
 	<p id='p1'>沧海一声笑</p>
 	<p id='p2'>滔滔两岸潮</p>
-	<script type="text/javascript"></script>
-	<audio src="mid/music.mp3" autoplay loop controls></audio>
 	<script src="http://127.0.0.1:35729/livereload.js?ext=Chrome&amp;extver=2.1.0"></script>
+	<audio src="mid/music.mp3" autoplay loop id="au"></audio>
 </body>
 </html>
